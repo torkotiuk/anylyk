@@ -1,0 +1,64 @@
+.features {
+  background-color: var(--main-pink-color);
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 890px;
+
+    font-family: Cyrene, Arial, Helvetica, sans-serif;
+
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--text-color-blue);
+    // opacity: 90%;
+
+    @media screen and (max-width: 479px) {
+      font-size: 3em;
+      opacity: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 4em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 6em;
+      line-height: 85%;
+    }
+  }
+
+  & .hairstyles {
+    width: 300px;
+    margin-bottom: 36px;
+  }
+
+  & .btn {
+    background-color: var(--main-yellow-color);
+  }
+
+  & .description {
+    color: var(--text-color-blue);
+
+    margin-top: 0;
+    margin-bottom: 36px;
+
+    font-size: 1.5em;
+    line-height: 175%;
+    font-weight: 600;
+  }
+
+  & .text:not(:last-child) {
+    color: var(--text-color-blue);
+    font-size: 1em;
+    margin-top: 0;
+    line-height: 225%;
+
+    margin-bottom: 36px;
+  }
+}
