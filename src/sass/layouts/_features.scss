@@ -33,13 +33,17 @@
     }
   }
 
-  & .hairstyles {
-    width: 300px;
+  & .hairstyles-pic {
+    width: 100%;
     margin-bottom: 36px;
   }
 
   & .btn {
     background-color: var(--main-yellow-color);
+
+    @media screen and (max-width: 334px) {
+      font-size: 20px;
+    }
   }
 
   & .description {

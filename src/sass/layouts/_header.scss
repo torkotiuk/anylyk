@@ -18,10 +18,10 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
 
   @media screen and (min-width: 768px) {
     margin-left: 4vw;
@@ -32,16 +32,31 @@
   }
 }
 
-.header-running-text {
+.header-marquee {
+  display: block;
+
   background-color: var(--main-yellow-color);
   color: var(--main-green-color);
 
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 300px;
 
   font-size: 16px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media (min-width: 480px) {
+    width: 300px;
+  }
+}
+
+.test {
+  height: 50px;
+  background-color: orange;
+  width: 100%;
 }
 
 .mini-loop__star {
