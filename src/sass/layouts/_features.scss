@@ -15,7 +15,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: var(--text-color-blue);
+    color: var(--main-blue-color);
     // opacity: 90%;
 
     @media screen and (max-width: 479px) {
@@ -47,7 +47,7 @@
   }
 
   & .description {
-    color: var(--text-color-blue);
+    color: var(--main-blue-color);
 
     margin-top: 0;
     margin-bottom: 36px;
@@ -63,7 +63,7 @@
   }
 
   & .text {
-    color: var(--text-color-blue);
+    color: var(--main-blue-color);
     font-size: 18px;
     margin-top: 0;
     line-height: 225%;

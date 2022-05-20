@@ -3,8 +3,8 @@
 }
 
 .faq-title {
-  border-top: 1px solid var(--text-color-blue);
-  border-bottom: 1px solid var(--text-color-blue);
+  border-top: 1px solid var(--main-blue-color);
+  border-bottom: 1px solid var(--main-blue-color);
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -16,7 +16,7 @@
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: var(--text-color-blue);
+  color: var(--main-blue-color);
 
   @media screen and (max-width: 479px) {
     font-size: 3em;
@@ -34,10 +34,10 @@
 }
 
 .faq-list {
-  color: var(--text-color-blue);
+  color: var(--main-blue-color);
 
   & .item {
-    border-bottom: 1px solid var(--text-color-blue);
+    border-bottom: 1px solid var(--main-blue-color);
     padding-bottom: 32px;
   }
 
