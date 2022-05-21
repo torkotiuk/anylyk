@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-main-wrapper {
+  background-color: var(--main-green-color);
+
+  // height: 100vh;
+  // min-height: 725px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+img {
+  display: block;
+
+  // max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}

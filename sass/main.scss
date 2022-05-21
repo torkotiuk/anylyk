@@ -1,0 +1,19 @@
+// utils
+@import './utils/variables';
+
+// basic
+@import './base/basic';
+@import './base/section';
+@import './base/container';
+
+// components
+@import './components/logo';
+@import './components/btn';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/faq';
+@import './layouts/contact';
+@import './layouts/footer';

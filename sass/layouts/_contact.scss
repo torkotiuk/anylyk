@@ -1,0 +1,153 @@
+.section.contact {
+  background-color: var(--main-grey-color);
+}
+
+.contact-marquee {
+  background-color: var(--main-blue-color);
+  border-bottom: 2px solid var(--main-yellow-color);
+  border-top: 2px solid var(--main-yellow-color);
+}
+
+.contact-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-family: Cyrene, Arial, Helvetica, sans-serif;
+
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-yellow-color);
+
+  // @media screen and (max-width: 479px) {
+  //   font-size: 3em;
+  //   opacity: 100%;
+  // }
+
+  @media screen and (min-width: 480px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 52px;
+    line-height: 85%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 70px;
+    line-height: 85%;
+  }
+}
+
+// contact-card
+.contact-cards-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  :not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    :not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.square {
+  position: relative;
+  width: 70%;
+  background-color: var(--main-yellow-color);
+  outline: 1px solid var(--main-blue-color);
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+
+  width: 100%;
+  border-top: 1px solid var(--main-blue-color);
+  border-bottom: 1px solid var(--main-blue-color);
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--main-blue-color);
+  filter: contrast(0.6);
+
+  @media (min-width: 400px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 56px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 6.5vw;
+  }
+}
+
+// contact-keep-me-informed-title
+// contact-signmeup-link
+.contact-link-form {
+  margin-top: 64px;
+}
+
+.contact-keep-me-informed-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #16774a;
+
+  @media screen and (min-width: 768px) {
+    font-size: 6em;
+  }
+}
+
+.contact-signmeup-link {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--main-green-color);
+  border-bottom: 1px solid var(--main-green-color);
+  filter: contrast(1.75);
+
+  font-size: 1em;
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}

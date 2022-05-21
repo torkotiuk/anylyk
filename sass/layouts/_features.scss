@@ -1,0 +1,84 @@
+.features {
+  background-color: var(--main-pink-color);
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 890px;
+
+    font-family: Cyrene, Arial, Helvetica, sans-serif;
+
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--main-blue-color);
+    // opacity: 90%;
+
+    @media screen and (max-width: 479px) {
+      font-size: 3em;
+      opacity: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 4em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 6em;
+      line-height: 85%;
+    }
+  }
+
+  & .hairstyles-pic {
+    width: 100%;
+    margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+  }
+
+  & .btn {
+    background-color: var(--main-yellow-color);
+
+    @media screen and (max-width: 334px) {
+      font-size: 20px;
+    }
+  }
+
+  & .description {
+    color: var(--main-blue-color);
+
+    margin-top: 0;
+    margin-bottom: 36px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.75;
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 1.75;
+    }
+  }
+
+  & .text {
+    color: var(--main-blue-color);
+    font-size: 18px;
+    margin-top: 0;
+    line-height: 225%;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 2.25;
+    }
+  }
+
+  & .text:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}
