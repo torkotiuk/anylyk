@@ -108,14 +108,30 @@
   }
 
   @media (min-width: 768px) {
-    font-size: 6.5vw;
+    font-size: 6vw;
   }
+}
+
+.insta-link-item {
+  padding: 20px 30px;
+
+  background-color: var(--main-yellow-color);
+  color: var(--main-blue-color);
+  border: 1px solid var(--main-blue-color);
+
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 // contact-keep-me-informed-title
 // contact-signmeup-link
 .contact-link-form {
   margin-top: 64px;
+  width: 400px;
+
+  @media screen and (min-width: 767px) {
+    width: 600px;
+  }
 }
 
 .contact-keep-me-informed-title {

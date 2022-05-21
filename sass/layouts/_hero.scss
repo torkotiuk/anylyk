@@ -19,7 +19,8 @@
   margin-right: auto;
   max-width: 890px;
 
-  font-family: Cyrene, Arial, Helvetica, sans-serif;
+  // font-family: Cyrene, Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
 
   font-weight: 400;
   line-height: 100%;
@@ -27,7 +28,7 @@
   text-transform: uppercase;
 
   color: var(--main-yellow-color);
-  opacity: 90%;
+  // opacity: 95%;
 
   @media screen and (max-width: 479px) {
     font-size: 4em;
