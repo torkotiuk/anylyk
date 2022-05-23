@@ -69,51 +69,84 @@
     font-size: 18px;
     line-height: 225%;
   }
+}
 
-  .email {
-    color: var(--main-yellow-color);
-    font-size: 18px;
-    line-height: 225%;
+//
+// email
+//
 
-    display: inline-block;
-    position: relative;
-    padding: 0.2em 0;
+.email {
+  color: var(--main-yellow-color);
+  font-size: 18px;
+  line-height: 120%;
+
+  display: inline-block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+//
+// EMAIL AFTER start
+//
+.email::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--main-yellow-color);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.email:hover::after,
+.email:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+.email {
+  overflow: hidden;
+}
+
+.email::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.email:hover::after,
+.email:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+//
+// EMAIL AFTER end
+//
+
+// PRIVACY list
+.privacy-list {
+  margin-top: 50px;
+
+  .dev-link-item {
+    @media screen and (max-width: 767px) {
+      margin-top: 8px;
+    }
   }
 
-  //
-  //
-  .email::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: var(--main-yellow-color);
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
+  &__dev-link-container .link {
+    display: flex;
   }
 
-  .email:hover::after,
-  .email:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+  &__dev-img {
+    width: 50px;
+    background-color: transparent;
+    filter: contrast(0.8);
   }
 
-  /* Slide in */
-  .email {
-    overflow: hidden;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  .email::after {
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  .email:hover::after,
-  .email:focus::after {
-    transform: translate3d(0, 0, 0);
-  }
-  //
-  //
 }
