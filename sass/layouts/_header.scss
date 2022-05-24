@@ -8,8 +8,16 @@
 
   @media screen and (min-width: 768px) {
     position: sticky;
-    top: 2rem;
+    top: 1rem;
   }
+
+  transition: all 0.5s;
+}
+
+.header.active {
+  border-top: 1px solid var(--main-green-color);
+  border-bottom: 1px solid var(--main-green-color);
+  transition: all 0.5s;
 }
 
 .header-container {
@@ -53,14 +61,14 @@
   }
 }
 
-.test {
-  height: 50px;
-  background-color: orange;
-  width: 100%;
-}
-
 .mini-loop__star {
   width: 14px;
   height: 14px;
   fill: var(--main-green-color);
 }
+
+// .test {
+//   height: 50px;
+//   background-color: orange;
+//   width: 100%;
+// }

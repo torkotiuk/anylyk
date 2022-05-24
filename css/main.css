@@ -86,6 +86,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-yellow-color);
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 480px) {
@@ -98,6 +99,11 @@ img {
   .logo {
     margin-bottom: 20px;
   }
+}
+
+.logo.active {
+  color: var(--main-green-color);
+  transition: all 0.5s;
 }
 
 .btn {
@@ -145,6 +151,7 @@ img {
 .header {
   border-top: 1px solid var(--main-yellow-color);
   border-bottom: 1px solid var(--main-yellow-color);
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 767px) {
@@ -156,8 +163,14 @@ img {
 @media screen and (min-width: 768px) {
   .header {
     position: sticky;
-    top: 2rem;
+    top: 1rem;
   }
+}
+
+.header.active {
+  border-top: 1px solid var(--main-green-color);
+  border-bottom: 1px solid var(--main-green-color);
+  transition: all 0.5s;
 }
 
 .header-container {
@@ -194,12 +207,6 @@ img {
   .header-marquee {
     width: 300px;
   }
-}
-
-.test {
-  height: 50px;
-  background-color: orange;
-  width: 100%;
 }
 
 .mini-loop__star {

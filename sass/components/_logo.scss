@@ -8,6 +8,8 @@
 
   color: var(--main-yellow-color);
 
+  transition: all 0.5s;
+
   @media screen and (max-width: 480px) {
     padding-left: 15px;
   }
@@ -15,4 +17,9 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
+}
+
+.logo.active {
+  color: var(--main-green-color);
+  transition: all 0.5s;
 }
