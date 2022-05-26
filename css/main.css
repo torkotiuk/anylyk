@@ -491,7 +491,7 @@ img {
   border-top: 2px solid var(--main-yellow-color);
 }
 
-.contact-title {
+.contact-marquee .contact-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -507,20 +507,20 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .contact-title {
+  .contact-marquee .contact-title {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact-title {
+  .contact-marquee .contact-title {
     font-size: 52px;
     line-height: 85%;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .contact-title {
+  .contact-marquee .contact-title {
     font-size: 70px;
     line-height: 85%;
   }
@@ -548,27 +548,24 @@ img {
 }
 
 .square {
-  position: relative;
-  width: 70%;
   background-color: var(--main-yellow-color);
   outline: 1px solid var(--main-blue-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.square:after {
-  content: '';
-  display: block;
-  padding-bottom: 100%;
+@media screen and (min-width: 320px) {
+  .square {
+    min-height: 280px;
+  }
 }
 
 .content {
-  position: absolute;
-  width: 100%;
   border-top: 1px solid var(--main-blue-color);
   border-bottom: 1px solid var(--main-blue-color);
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-size: 36px;
@@ -608,7 +605,9 @@ img {
 
 .contact-link-form {
   margin-top: 64px;
-  width: 400px;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 767px) {
@@ -619,14 +618,18 @@ img {
 
 .contact-keep-me-informed-title {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
   color: #16774a;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-keep-me-informed-title {
+    font-size: 4em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -772,10 +775,19 @@ img {
   margin-top: 50px;
 }
 
+.privacy-list .dev-link-item {
+  transform: all 0.5s;
+}
+
 @media screen and (max-width: 767px) {
   .privacy-list .dev-link-item {
     margin-top: 8px;
   }
+}
+
+.privacy-list .dev-link-item:hover, .privacy-list .dev-link-item:focus {
+  filter: contrast(120%);
+  transform: all 0.5s;
 }
 
 .privacy-list__dev-link-container .link {

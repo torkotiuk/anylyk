@@ -3,7 +3,7 @@ const logo = document.querySelector('.logo');
 const mybutton = document.getElementById('myBtn');
 
 window.onscroll = function () {
-  var top = window.scrollY;
+  const top = window.scrollY;
 
   scrollFunction();
 

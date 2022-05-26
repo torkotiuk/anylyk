@@ -129,8 +129,16 @@
   margin-top: 50px;
 
   .dev-link-item {
+    transform: all 0.5s;
+
     @media screen and (max-width: 767px) {
       margin-top: 8px;
+    }
+
+    &:hover,
+    &:focus {
+      filter: contrast(120%);
+      transform: all 0.5s;
     }
   }
 
