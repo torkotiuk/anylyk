@@ -135,11 +135,17 @@
 // contact-signmeup-link
 .contact-link-form {
   margin-top: 64px;
-  max-width: 400px;
+  // max-width: 400px;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 600px;
   }
 }
@@ -164,20 +170,25 @@
   }
 }
 
-.contact-signmeup-link {
+.contact-signmeup-btn {
   display: block;
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
+
+  background-color: inherit;
   color: var(--main-green-color);
-  border-bottom: 1px solid var(--main-green-color);
   filter: contrast(1.75);
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--main-green-color);
 
   font-size: 1em;
   line-height: 100%;
   font-weight: 400;
+  text-align: left;
   text-transform: uppercase;
   cursor: pointer;
 }
