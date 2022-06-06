@@ -236,13 +236,16 @@
     <!-- BACKDROP & MODAL start -->
     <div id="simpleBackdrop" class="backdrop">
       <div class="modal-content">
-        <span class="closeBtn">&times;</span>
+        <!--  -->
+        <svg class="closeBtn" aria-label="Close button">
+          <use href="./assets/images/sprite.svg#icon-close1"></use>
+        </svg>
         <p>Hello... I am a modal :)</p>
       </div>
     </div>
     <!-- BACKDROP & MODAL end -->
 
-    <!-- <script src="./js/scrollUpBtn.js"></script> -->
-    <script src="./js/changeColor-in-stickyHeader.js"></script>
+    <script src="./js/onScroll.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
