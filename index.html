@@ -129,38 +129,38 @@
           <!-- CONTACT start -->
           <section class="section contact">
             <marquee
-              class="contact-marquee"
+              class="contact__marquee"
               behavior="scroll"
               scrollamount="3"
               direction="left"
             >
-              <h2 class="contact-title">Jesteśmy zainspirowane</h2>
+              <h2 class="contact__title">Jesteśmy zainspirowane</h2>
             </marquee>
 
-            <ul class="container contact-cards-list list">
-              <li class="square">
-                <div class="content">Mój</div>
+            <ul class="container list contact__cards-list">
+              <li class="contact__square">
+                <div class="contact__content">Mój</div>
               </li>
               <li>
                 <a
                   target="_blank"
-                  class="link insta-link-item"
+                  class="link contact__insta-link"
                   href="https://www.instagram.com/andriitorkotiuk/"
                   >@MójAnylyk</a
                 >
               </li>
-              <li class="square">
-                <div class="content">Anylyk</div>
+              <li class="contact__square">
+                <div class="contact__content">Anylyk</div>
               </li>
             </ul>
 
-            <div class="contact-link-form">
-              <div class="contact-keep-me-inf-container">
-                <span class="contact-keep-me-informed-title">Informuj</span>
-                <span class="contact-keep-me-informed-title">mnie</span>
+            <div class="contact__form">
+              <div>
+                <span class="contact__keep-me-informed-title">Informuj</span>
+                <span class="contact__keep-me-informed-title">mnie</span>
               </div>
 
-              <button type="button" class="contact-signmeup-btn signmeupBtn">
+              <button type="button" class="contact__signmeup-btn signmeupBtn">
                 Sign me up
               </button>
             </div>
@@ -175,19 +175,22 @@
       <!-- FOOTER start-->
       <footer class="footer">
         <div class="container">
-          <address id="footer-address" class="footer-address">
-            <h3 class="footer-address-title">MójAnylyk contact</h3>
-            <p class="text">
+          <address class="address">
+            <h3 class="address__title">MójAnylyk kontakt</h3>
+            <p class="address__text">
               Jesteśmy otwarci na wszystko! Pytaj nas o swoim pytanniu czy
-              podziel się z nami swoimi pomysmi:
+              podziel się z nami swoimi pomysłami:
             </p>
-            <a class="link email" href="mailto:biuro@mojanylyk.com"
+            <a
+              class="link address__email underline"
+              href="mailto:biuro@mojanylyk.com"
               >biuro@mojanylyk.com</a
             >
           </address>
 
           <h2 class="title">Mój Anylyk</h2>
         </div>
+
         <marquee
           class="footer-marquee"
           behavior="scroll"
@@ -208,7 +211,11 @@
         </marquee>
 
         <ul class="privacy-list list container">
-          <li><a class="email link" href="">Polityka prywatnośći</a></li>
+          <li>
+            <a class="privacy-list__text link underline" href=""
+              >Polityka prywatnośći</a
+            >
+          </li>
           <li class="item dev-link-item">
             <div class="privacy-list__dev-link-container">
               <a

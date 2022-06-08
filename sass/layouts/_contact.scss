@@ -2,12 +2,15 @@
   background-color: var(--main-grey-color);
 }
 
-.contact-marquee {
-  background-color: var(--main-blue-color);
-  border-bottom: 2px solid var(--main-yellow-color);
-  border-top: 2px solid var(--main-yellow-color);
+.contact {
+  // contact__marquee & contact__title
+  &__marquee {
+    background-color: var(--main-blue-color);
+    border-bottom: 2px solid var(--main-yellow-color);
+    border-top: 2px solid var(--main-yellow-color);
+  }
 
-  .contact-title {
+  &__title {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -23,11 +26,6 @@
     text-transform: uppercase;
     color: var(--main-yellow-color);
 
-    // @media screen and (max-width: 479px) {
-    //   font-size: 3em;
-    //   opacity: 100%;
-    // }
-
     @media screen and (min-width: 480px) {
       font-size: 32px;
     }
@@ -42,153 +40,136 @@
       line-height: 85%;
     }
   }
-}
 
-// contact-card
-.contact-cards-list {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  :not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
+  // contact__cards-list
+  &__cards-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     :not(:last-child) {
-      margin-right: 30px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+
+      :not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0px;
+      }
     }
   }
-}
 
-.square {
-  // position: relative;
-  background-color: var(--main-yellow-color);
-  outline: 1px solid var(--main-blue-color);
+  &__square {
+    background-color: var(--main-yellow-color);
+    outline: 1px solid var(--main-blue-color);
 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 
-  @media screen and (min-width: 320px) {
-    min-height: 280px;
-  }
-}
-
-// .square:after {
-//   content: '';
-//   display: block;
-//   padding-bottom: 100%;
-// }
-
-.content {
-  // position: absolute;
-  // width: 100%;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-
-  border-top: 1px solid var(--main-blue-color);
-  border-bottom: 1px solid var(--main-blue-color);
-  // text-align: center;
-
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 100%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--main-blue-color);
-  filter: contrast(0.6);
-
-  @media (min-width: 400px) {
-    font-size: 40px;
+    @media screen and (min-width: 320px) {
+      min-height: 280px;
+    }
   }
 
-  @media (min-width: 480px) {
-    font-size: 56px;
+  &__content {
+    border-top: 1px solid var(--main-blue-color);
+    border-bottom: 1px solid var(--main-blue-color);
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--main-blue-color);
+    filter: contrast(0.6);
+
+    @media (min-width: 400px) {
+      font-size: 40px;
+    }
+
+    @media (min-width: 480px) {
+      font-size: 56px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 6vw;
+    }
   }
 
-  @media (min-width: 768px) {
-    font-size: 6vw;
-  }
-}
+  &__insta-link {
+    padding: 20px 30px;
 
-.insta-link-item {
-  padding: 20px 30px;
+    background-color: var(--main-yellow-color);
+    color: var(--main-blue-color);
+    border: 1px solid var(--main-blue-color);
 
-  background-color: var(--main-yellow-color);
-  color: var(--main-blue-color);
-  border: 1px solid var(--main-blue-color);
-
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-// contact-keep-me-informed-title
-// contact-signmeup-link
-.contact-link-form {
-  margin-top: 64px;
-  // max-width: 400px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media screen and (max-width: 767px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 400px;
+    font-size: 20px;
+    text-transform: uppercase;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 600px;
+  // contact__form
+  &__keep-me-informed-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #16774a;
+
+    @media screen and (min-width: 480px) {
+      font-size: 4em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 6em;
+    }
   }
-}
 
-.contact-keep-me-informed-title {
-  display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
-  line-height: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #16774a;
+  &__form {
+    margin-top: 64px;
+    // max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
 
-  @media screen and (min-width: 480px) {
-    font-size: 4em;
+    @media screen and (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 6em;
+  &__signmeup-btn {
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    background-color: inherit;
+    color: var(--main-green-color);
+    filter: contrast(1.75);
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--main-green-color);
+
+    font-size: 1em;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
   }
-}
-
-.contact-signmeup-btn {
-  display: block;
-  margin-top: 50px;
-  padding-bottom: 10px;
-  width: 100%;
-
-  background-color: inherit;
-  color: var(--main-green-color);
-  filter: contrast(1.75);
-
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid var(--main-green-color);
-
-  font-size: 1em;
-  line-height: 100%;
-  font-weight: 400;
-  text-align: left;
-  text-transform: uppercase;
-  cursor: pointer;
 }
