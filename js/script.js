@@ -59,3 +59,22 @@ function clickOutside(e) {
     backdrop.style.display = 'none';
   }
 }
+
+// modal for images
+const refs = {
+  openModalBtn: document.querySelector('[data-open-modal]'),
+  closeModalBtn: document.querySelector('[data-close-modal]'),
+  overlay: document.querySelector('[data-overlay]'),
+};
+
+refs.openModalBtn.addEventListener('click', toggleModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);
+refs.overlay.addEventListener('click', logoverlayClick);
+
+function toggleModal() {
+  refs.overlay.classList.toggle('overlay--is-hidden');
+}
+
+function logBackdropClick() {
+  console.log('This is a click to the backdrop');
+}

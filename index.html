@@ -241,7 +241,7 @@
     <!-- GO-TO-TOP-BUTTON end -->
 
     <!-- BACKDROP & MODAL start -->
-    <div id="simpleBackdrop" class="backdrop">
+    <div class="backdrop" id="simpleBackdrop">
       <div class="modal-content">
         <!--  -->
         <svg class="closeBtn" aria-label="Close button">
@@ -252,7 +252,12 @@
     </div>
     <!-- BACKDROP & MODAL end -->
 
-    <script src="./js/onScroll.js"></script>
-    <script src="./js/modal.js"></script>
+    <!-- Backdrop & modal for images - - -> START -->
+    <div class="overlay overlay--is-hidden" data-backdrop>
+      <div class="img-modal">11</div>
+    </div>
+    <!-- Backdrop & modal for images - - -> END - -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
