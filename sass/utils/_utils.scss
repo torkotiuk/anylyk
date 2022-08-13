@@ -23,3 +23,12 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  .modal {
+    transform: scale(0.7);
+  }
+}

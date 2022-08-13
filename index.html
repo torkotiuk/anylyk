@@ -59,7 +59,10 @@
               <p class="hero-description">
                 Uczciwe układania włosów z ugryzieniem.
               </p>
-              <button type="button" class="btn">_ Informuj mnie</button>
+
+              <button type="button" class="btn" data-open-modal>
+                _ Informuj mnie
+              </button>
             </div>
           </section>
           <!-- HERO end -->
@@ -92,7 +95,9 @@
 
               <p class="text">Nie ma co się ukrywać. Wybież MójAnylyk!</p>
 
-              <button type="button" class="btn">_ informuj mnie</button>
+              <button type="button" class="btn" data-open-modal1>
+                _ informuj mnie
+              </button>
             </div>
           </section>
           <!-- FEATURES end -->
@@ -240,23 +245,25 @@
     <a href="#header"><button id="myBtn" title="Go to top">Top</button></a>
     <!-- GO-TO-TOP-BUTTON end -->
 
-    <!-- BACKDROP & MODAL start -->
-    <div class="backdrop" id="simpleBackdrop">
-      <div class="modal-content">
-        <!--  -->
-        <svg class="closeBtn" aria-label="Close button">
+    <!-- BACKDROP & MODAL start_____OLD_____ -->
+    <!-- <div class="backdrop__OLD" id="simpleBackdrop__OLD">
+      <div class="modal-content__OLD">
+        <svg class="closeBtn__OLD" aria-label="Close button__OLD">
           <use href="./assets/images/sprite.svg#icon-close1"></use>
         </svg>
         <p>Hello... I am a modal :)</p>
       </div>
-    </div>
+    </div> -->
     <!-- BACKDROP & MODAL end -->
 
-    <!-- Backdrop & modal for images - - -> START -->
-    <div class="overlay overlay--is-hidden" data-backdrop>
-      <div class="img-modal">11</div>
+    <!-- backdrop--is-hidden -->
+    <div class="backdrop backdrop--is-hidden" data-backdrop>
+      <div class="modal">
+        <svg data-close-modal class="btn--close" aria-label="Close button">
+          <use href="./assets/images/sprite.svg#icon-close1"></use>
+        </svg>
+      </div>
     </div>
-    <!-- Backdrop & modal for images - - -> END - -->
 
     <script src="./js/script.js"></script>
   </body>

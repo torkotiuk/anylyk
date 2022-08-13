@@ -5,18 +5,6 @@ const logo = document.querySelector('.logo');
 // 2-A: getting scrollUp button
 const mybutton = document.getElementById('myBtn');
 
-// 3-A: for modal
-const backdrop = document.getElementById('simpleBackdrop');
-const backdropBtn = document.getElementsByClassName('btn')[0];
-const backdropBtn1 = document.getElementsByClassName('btn')[1];
-const backdropBtn2 = document.getElementsByClassName('signmeupBtn')[0];
-const closeBtn = document.getElementsByClassName('closeBtn')[0];
-backdropBtn.addEventListener('click', openBackdrop);
-backdropBtn1.addEventListener('click', openBackdrop);
-backdropBtn2.addEventListener('click', openBackdrop);
-closeBtn.addEventListener('click', closeBackdrop);
-window.addEventListener('click', clickOutside);
-
 window.onscroll = function () {
   // 1-B:
   const top = window.scrollY;
@@ -42,37 +30,21 @@ function scrollFunction() {
   }
 }
 
-// 3-B: for modal
-function openBackdrop() {
-  backdrop.style.display = 'block';
-  mybutton.style.display = 'none';
-}
-
-function closeBackdrop() {
-  backdrop.style.display = 'none';
-  mybutton.style.display = 'block';
-}
-
-function clickOutside(e) {
-  console.log('clickOutside DOES NOT working correctly!!');
-  if (e.target == backdrop) {
-    backdrop.style.display = 'none';
-  }
-}
-
-// modal for images
+// 3 - Modal
 const refs = {
   openModalBtn: document.querySelector('[data-open-modal]'),
+  openModalBtn1: document.querySelector('[data-open-modal1]'),
   closeModalBtn: document.querySelector('[data-close-modal]'),
-  overlay: document.querySelector('[data-overlay]'),
+  backdrop: document.querySelector('[data-backdrop]'),
 };
 
 refs.openModalBtn.addEventListener('click', toggleModal);
+refs.openModalBtn1.addEventListener('click', toggleModal);
 refs.closeModalBtn.addEventListener('click', toggleModal);
-refs.overlay.addEventListener('click', logoverlayClick);
+refs.backdrop.addEventListener('click', logBackdropClick);
 
 function toggleModal() {
-  refs.overlay.classList.toggle('overlay--is-hidden');
+  refs.backdrop.classList.toggle('backdrop--is-hidden');
 }
 
 function logBackdropClick() {

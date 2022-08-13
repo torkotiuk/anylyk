@@ -31,6 +31,15 @@
   transform: translate3d(0, 0, 0);
 }
 
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop--is-hidden .modal {
+  transform: scale(0.7);
+}
+
 html,
 body {
   height: 100%;
@@ -173,56 +182,32 @@ img {
 }
 
 .backdrop {
-  display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
-  animation-name: backdrop;
-  animation-duration: 0.5s;
+  transition: opacity 250ms linear;
 }
 
-@keyframes backdrop {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.modal-content {
+.modal {
   background-color: var(--main-pink-color);
   padding: 20px;
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  animation-name: modal-content_open;
-  animation-duration: 1s;
+  transition: transform 250ms linear;
 }
 
 @media screen and (min-width: 990px) {
-  .modal-content {
+  .modal {
     width: 70%;
   }
 }
 
-/* acc. to anim.-dur.: 1s */
-@keyframes modal-content_open {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.closeBtn {
+.btn--close {
   width: 80px;
   height: 80px;
   padding: 25px;
@@ -233,13 +218,13 @@ img {
   float: right;
 }
 
-.closeBtn:hover,
-.closeBtn:focus {
+.btn--close:hover,
+.btn--close:focus {
   cursor: pointer;
 }
 
-.closeBtn:hover use,
-.closeBtn:focus use {
+.btn--close:hover use,
+.btn--close:focus use {
   filter: contrast(180%);
 }
 
