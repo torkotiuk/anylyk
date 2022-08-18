@@ -160,6 +160,16 @@ img {
   border: 2px solid var(--main-blue-color);
 }
 
+.modal .btn {
+  background-color: var(--main-yellow-color);
+}
+
+@media screen and (max-width: 342px) {
+  .modal .btn {
+    font-size: 18px;
+  }
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -193,8 +203,9 @@ img {
 }
 
 .modal {
+  position: relative;
   background-color: var(--main-pink-color);
-  padding: 20px;
+  padding: 15px 24px;
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -207,7 +218,30 @@ img {
   }
 }
 
+.modal__title {
+  margin-bottom: 20px;
+  font-family: Cyrene, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: var(--main-blue-color);
+}
+
+.modal__title span {
+  display: block;
+}
+
+.modal__text {
+  color: var(--main-blue-color);
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 225%;
+}
+
 .btn--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   width: 80px;
   height: 80px;
   padding: 25px;
@@ -215,7 +249,6 @@ img {
   border-radius: 50%;
   fill: var(--main-blue-color);
   background-color: var(--main-yellow-color);
-  float: right;
 }
 
 .btn--close:hover,
@@ -228,30 +261,32 @@ img {
   filter: contrast(180%);
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+.modal__form {
+  outline: 3px dotted orange;
+}
+
+.modal__form input {
+  background-color: var(--main-pink-color);
+  border: none;
+  padding: 24px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(110, 110, 110, 0.5);
-  opacity: 1;
-  transition: 250ms opacity linear;
+  color: var(--main-blue-color);
+  text-transform: uppercase;
 }
 
-.overlay--is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.modal__form input::placeholder {
+  color: var(--main-blue-color);
+  filter: contrast(10%);
+  text-transform: none;
 }
 
-.img-modal {
-  position: absolute;
-  background-color: #fff;
-  width: 80%;
-  height: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.modal__form input:not(:last-child) {
+  border-bottom: 3px solid var(--main-blue-color);
+}
+
+.modal__main-info-container {
+  outline: 3px solid var(--main-blue-color);
+  border-radius: 8px;
 }
 
 .header {

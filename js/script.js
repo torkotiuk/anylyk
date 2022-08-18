@@ -3,7 +3,7 @@ const header = document.querySelector('.header');
 const logo = document.querySelector('.logo');
 
 // 2-A: getting scrollUp button
-const mybutton = document.getElementById('myBtn');
+// const mybutton = document.getElementById('myBtn');
 
 window.onscroll = function () {
   // 1-B:
@@ -18,17 +18,17 @@ window.onscroll = function () {
   }
 
   // 2-B:
-  scrollFunction();
+  // scrollFunction();
 };
 
 // 2-C: display scrollBtn fn
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = 'block';
-  } else {
-    mybutton.style.display = 'none';
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = 'block';
+//   } else {
+//     mybutton.style.display = 'none';
+//   }
+// }
 
 // 3 - Modal
 const refs = {
