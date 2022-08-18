@@ -261,10 +261,6 @@ img {
   filter: contrast(180%);
 }
 
-.modal__form {
-  outline: 3px dotted orange;
-}
-
 .modal__form input {
   background-color: var(--main-pink-color);
   border: none;
