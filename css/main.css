@@ -206,6 +206,7 @@ img {
   position: relative;
   background-color: var(--main-pink-color);
   padding: 15px 24px;
+  padding-top: 58px;
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -219,6 +220,7 @@ img {
 }
 
 .modal__title {
+  outline: 1px solid var(--main-blue-color);
   margin-bottom: 20px;
   font-family: Cyrene, Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -236,6 +238,7 @@ img {
   font-size: 18px;
   margin-top: 0;
   line-height: 225%;
+  margin-bottom: 0;
 }
 
 .btn--close {
@@ -261,6 +264,10 @@ img {
   filter: contrast(180%);
 }
 
+.modal__form {
+  margin-top: 40px;
+}
+
 .modal__form input {
   background-color: var(--main-pink-color);
   border: none;
@@ -272,12 +279,30 @@ img {
 
 .modal__form input::placeholder {
   color: var(--main-blue-color);
-  filter: contrast(10%);
+  filter: contrast(50%);
+  letter-spacing: 1.5px;
   text-transform: none;
 }
 
 .modal__form input:not(:last-child) {
   border-bottom: 3px solid var(--main-blue-color);
+}
+
+.modal__form .privacy-container {
+  outline: 1px solid red;
+  display: flex;
+  margin-top: 40px;
+}
+
+.modal__form .privacy-label {
+  outline: 2px solid green;
+  text-align: justify;
+  display: inline-block;
+  color: var(--main-blue-color);
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 150%;
+  margin-bottom: 0;
 }
 
 .modal__main-info-container {

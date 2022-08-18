@@ -16,6 +16,7 @@
   background-color: var(--main-pink-color);
 
   padding: 15px 24px;
+  padding-top: 58px;
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -27,6 +28,7 @@
   transition: transform 250ms linear;
 
   &__title {
+    outline: 1px solid var(--main-blue-color);
     margin-bottom: 20px;
     font-family: Cyrene, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -43,5 +45,6 @@
     font-size: 18px;
     margin-top: 0;
     line-height: 225%;
+    margin-bottom: 0;
   }
 }
