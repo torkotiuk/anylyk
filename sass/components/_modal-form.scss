@@ -1,6 +1,10 @@
 .modal__form {
-  // outline: 3px dotted orange;
   margin-top: 40px;
+
+  &-4inputs-container {
+    outline: 3px solid var(--main-blue-color);
+    border-radius: 8px;
+  }
 
   input {
     background-color: var(--main-pink-color);
@@ -23,24 +27,47 @@
     }
   }
 
-  .privacy-container {
-    outline: 1px solid red;
+  // !!! privacy Start !!!
+  .privacy {
     display: flex;
     margin-top: 40px;
-  }
-  .privacy-label {
-    outline: 2px solid green;
-    text-align: justify;
-    display: inline-block;
-    color: var(--main-blue-color);
-    font-size: 18px;
-    margin-top: 0;
-    line-height: 150%;
-    margin-bottom: 0;
-  }
-}
 
-.modal__main-info-container {
-  outline: 3px solid var(--main-blue-color);
-  border-radius: 8px;
+    .checkbox {
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      padding: 0 !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      overflow: hidden;
+    }
+
+    .icon {
+      content: '';
+
+      flex: 0 0 auto;
+      // the same flex: none; - forbid flex-element to shrink
+
+      width: 24px;
+      height: 24px;
+
+      border: 3px solid var(--main-blue-color);
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .checkbox:checked + .icon {
+      background-color: var(--main-yellow-color);
+    }
+
+    .text {
+      text-align: justify;
+
+      color: var(--main-blue-color);
+      font-size: 18px;
+
+      line-height: 170%;
+    }
+  }
+  // !!! privacy End !!!
 }

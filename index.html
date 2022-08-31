@@ -254,41 +254,45 @@
         <p>Hello... I am a modal :)</p>
       </div>
     </div> -->
-    <!-- BACKDROP & MODAL end -->
-    <!-- backdrop--is-hidden -->
-    <div class="backdrop" data-backdrop>
+    <!-- BACKDROP & MODAL end_____OLD______-->
+
+    <div class="backdrop backdrop--is-hidden" data-backdrop>
       <div class="modal">
         <svg data-close-modal class="btn--close" aria-label="Close button">
           <use href="./assets/images/sprite.svg#icon-close1"></use>
         </svg>
         <!--  -->
         <!--  -->
-        <!-- <h2 class="modal__title">
+        <h2 class="modal__title">
           Jesteśmy MójAnylyk. <span>Dolącz do nas!</span>
-        </h2> -->
-        <!-- <p class="modal__text">
+        </h2>
+        <p class="modal__text">
           We will soon launch the first Noodz: toothpaste you can chew. Want to
           know more or be the first to try it?
-        </p> -->
+        </p>
+
+        <!-- Form start -->
         <form class="modal__form">
-          <!-- <div class="modal__main-info-container">
+          <div class="modal__form-4inputs-container">
             <input type="text" placeholder="Imie" />
             <input type="text" placeholder="Nazwisko" />
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Data urodzenia" />
-          </div> -->
-
-          <div class="privacy-container">
-            <input type="checkbox" />
-
-            <label class="privacy-label" for=""
-              >Noodz uses my data only to keep me informed and not for other
-              purposes. I agree with that! :-)</label
-            >
           </div>
+
+          <label class="privacy">
+            <input class="checkbox" type="checkbox" />
+            <span class="icon"></span>
+            <span class="text"
+              >Noodz uses my data only to keep me informed and not for other
+              purposes. I agree with that! :-)</span
+            >
+          </label>
 
           <button class="btn" type="submit">_ Informuj mnie</button>
         </form>
+        <!-- Form end -->
+
         <!--  -->
         <!--  -->
       </div>

@@ -220,7 +220,6 @@ img {
 }
 
 .modal__title {
-  outline: 1px solid var(--main-blue-color);
   margin-bottom: 20px;
   font-family: Cyrene, Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -268,6 +267,11 @@ img {
   margin-top: 40px;
 }
 
+.modal__form-4inputs-container {
+  outline: 3px solid var(--main-blue-color);
+  border-radius: 8px;
+}
+
 .modal__form input {
   background-color: var(--main-pink-color);
   border: none;
@@ -288,26 +292,41 @@ img {
   border-bottom: 3px solid var(--main-blue-color);
 }
 
-.modal__form .privacy-container {
-  outline: 1px solid red;
+.modal__form .privacy {
   display: flex;
   margin-top: 40px;
 }
 
-.modal__form .privacy-label {
-  outline: 2px solid green;
-  text-align: justify;
-  display: inline-block;
-  color: var(--main-blue-color);
-  font-size: 18px;
-  margin-top: 0;
-  line-height: 150%;
-  margin-bottom: 0;
+.modal__form .privacy .checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
-.modal__main-info-container {
-  outline: 3px solid var(--main-blue-color);
-  border-radius: 8px;
+.modal__form .privacy .icon {
+  content: '';
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--main-blue-color);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.modal__form .privacy .checkbox:checked + .icon {
+  background-color: var(--main-yellow-color);
+}
+
+.modal__form .privacy .text {
+  text-align: justify;
+  color: var(--main-blue-color);
+  font-size: 18px;
+  line-height: 170%;
 }
 
 .header {
