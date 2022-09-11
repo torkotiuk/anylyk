@@ -34,12 +34,14 @@ window.onscroll = function () {
 const refs = {
   openModalBtn: document.querySelector('[data-open-modal]'),
   openModalBtn1: document.querySelector('[data-open-modal1]'),
+  openModalBtn2: document.querySelector('[data-open-modal2]'),
   closeModalBtn: document.querySelector('[data-close-modal]'),
   backdrop: document.querySelector('[data-backdrop]'),
 };
 
 refs.openModalBtn.addEventListener('click', toggleModal);
 refs.openModalBtn1.addEventListener('click', toggleModal);
+refs.openModalBtn2.addEventListener('click', toggleModal);
 refs.closeModalBtn.addEventListener('click', toggleModal);
 refs.backdrop.addEventListener('click', logBackdropClick);
 
