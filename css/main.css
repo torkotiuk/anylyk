@@ -48,6 +48,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -200,6 +204,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   transition: opacity 250ms linear;
+  overflow-y: scroll;
 }
 
 .modal {

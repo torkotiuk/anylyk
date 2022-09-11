@@ -9,6 +9,8 @@
   backdrop-filter: blur(4px); // This be the blur
 
   transition: opacity 250ms linear;
+
+  overflow-y: scroll;
 }
 
 .modal {
